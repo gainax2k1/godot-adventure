@@ -15,10 +15,10 @@ func _process(_delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body is Player:
 		SceneManager.player_spawn_position = player_spawn_position
-		print("The player has entered me!")
+		#print("The player has entered me!")
 		get_tree().change_scene_to_file.call_deferred(next_scene)
 			#"call_deffered" waits until physics is done running
 
 func _on_body_exited(_body: Node2D) -> void:
 	
-	print("The player has exited me ;_;")
+	#print("The player has exited me ;_;")
