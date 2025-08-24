@@ -19,6 +19,6 @@ func _on_body_entered(body: Node2D) -> void:
 		get_tree().change_scene_to_file.call_deferred(next_scene)
 			#"call_deffered" waits until physics is done running
 
-func _on_body_exited(_body: Node2D) -> void:
+# func _on_body_exited(_body: Node2D) -> void:
 	
 	#print("The player has exited me ;_;")
